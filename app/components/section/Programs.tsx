@@ -42,25 +42,25 @@ export default function Programs() {
     </h3>
     <ul className="space-y-3 text-gray-700 leading-relaxed list-none">
       <li className="flex items-start">
-        <span className="w-3 h-3 mt-2 mr-3 bg-purple-600 rounded-full flex-shrink-0"></span>
+        <span className="w-3 h-3 mt-2 mr-3 bg-purple-600 rounded-full shrink-0"></span>
         <span>
           <strong>AI-Powered Learning Sessions:</strong> Break into Generative AI
         </span>
       </li>
       <li className="flex items-start">
-        <span className="w-3 h-3 mt-2 mr-3 bg-purple-600 rounded-full flex-shrink-0"></span>
+        <span className="w-3 h-3 mt-2 mr-3 bg-purple-600 rounded-full shrink-0"></span>
         Software Development (Frontend and Backend)
       </li>
       <li className="flex items-start">
-        <span className="w-3 h-3 mt-2 mr-3 bg-purple-600 rounded-full flex-shrink-0"></span>
+        <span className="w-3 h-3 mt-2 mr-3 bg-purple-600 rounded-full shrink-0"></span>
         Creative Design (Graphics)
       </li>
       <li className="flex items-start">
-        <span className="w-3 h-3 mt-2 mr-3 bg-purple-600 rounded-full flex-shrink-0"></span>
+        <span className="w-3 h-3 mt-2 mr-3 bg-purple-600 rounded-full shrink-0"></span>
         Product Design
       </li>
       <li className="flex items-start">
-        <span className="w-3 h-3 mt-2 mr-3 bg-purple-600 rounded-full flex-shrink-0"></span>
+        <span className="w-3 h-3 mt-2 mr-3 bg-purple-600 rounded-full shrink-0"></span>
         Cloud Computing
       </li>
     </ul>
@@ -79,7 +79,7 @@ export default function Programs() {
     </h3>
     <ul className="space-y-3 text-gray-700 leading-relaxed list-none">
       <li className="flex items-start">
-        <span className="w-3 h-3 mt-2 mr-3 bg-purple-600 rounded-full flex-shrink-0"></span>
+        <span className="w-3 h-3 mt-2 mr-3 bg-purple-600 rounded-full shrink-0"></span>
         <span>
           <strong>AI-Powered Learning Sessions:</strong> Break into Generative AI
         </span>
