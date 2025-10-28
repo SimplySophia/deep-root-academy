@@ -53,8 +53,8 @@ export default function Hero() {
             <div className="w-6 h-6 rounded-full bg-blue-500 shadow-md" />
             <div className="w-6 h-6 rounded-full bg-pink-500 shadow-md" />
             <div className="w-6 h-6 rounded-full bg-purple-500 shadow-md" />
-            <span className="text-sm font-semibold text-slate-400">
-              Students Learning Technology
+            <span className="text-sm md:text-lg font-semibold text-slate-700">
+              Reboot 2026 Tech BootCamp
             </span>
           </div>
 

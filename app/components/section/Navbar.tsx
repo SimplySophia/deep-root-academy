@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-16">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-cyan-700">
-          DeepRoot<span className="text-slate-800">Academy</span>
+          <span className="text-white bg-purple-800 rounded-lg text-lg p-3">DR</span>
         </Link>
 
         {/* Desktop Links */}
@@ -41,14 +41,14 @@ export default function Navbar() {
             </motion.div>
           ))}
 
-          <Button className="bg-cyan-600 hover:bg-cyan-700 text-white px-5 py-2 rounded-lg shadow-md">
+          <Button className="bg-pink-500 hover:bg-pink-600 text-white px-5 py-2 rounded-lg shadow-md">
             Sign Up
           </Button>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-cyan-700 hover:text-cyan-800 transition"
+          className="md:hidden text-pink-500 hover:text-pink-600 transition"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -63,7 +63,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white border-t border-cyan-100 shadow-lg"
+            className="md:hidden bg-white border-t border-purple-100 shadow-lg"
           >
             <div className="flex flex-col items-center space-y-5 py-6">
               {navLinks.map((link, i) => (
@@ -71,12 +71,12 @@ export default function Navbar() {
                   key={i}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-gray-700 hover:text-cyan-700 font-medium transition text-lg"
+                  className="text-gray-700 hover:text-purple-700 font-medium transition text-lg"
                 >
                   {link.label}
                 </Link>
               ))}
-              <Button className="bg-cyan-600 hover:bg-cyan-700 text-white w-10/12 rounded-lg py-2">
+              <Button className="bg-pink-500 hover:bg-pink-700 text-white w-10/12 rounded-lg py-2">
                 Sign Up
               </Button>
             </div>

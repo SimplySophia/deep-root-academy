@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-cyan-800 border-t border-cyan-100 py-6">
+    <footer className="bg-purple-400 border-t border-cyan-100 py-6">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-6 lg:px-16">
         {/* WhatsApp Contact */}
         <motion.div
@@ -25,7 +25,7 @@ export default function Footer() {
         </motion.div>
 
         {/* Copyright */}
-        <p className="text-gray-500 text-sm text-center md:text-right">
+        <p className="text-gray-700 text-sm text-center md:text-right">
           © {new Date().getFullYear()} Deep Root Academy. All rights reserved.
         </p>
       </div>

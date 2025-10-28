@@ -62,7 +62,7 @@ export default function AboutSection() {
               }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="p-6 bg-cyan-50 rounded-xl shadow-sm hover:shadow-lg cursor-pointer transition-transform"
+              className="p-6 bg-purple-100 rounded-xl shadow-sm hover:shadow-lg cursor-pointer transition-transform"
             >
               <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
                 <div className="mb-3">{item.icon}</div>
