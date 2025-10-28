@@ -39,10 +39,12 @@ export default function AboutSection() {
           className="md:w-1/2 text-center md:text-left"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-            Learn with Purpose. <span className="text-cyan-400">Build with Impact.</span>
+            Learn with Purpose. Build with Impact.
           </h2>
           <p className="mt-4 text-gray-600 text-lg leading-relaxed">
-            At our academy, we go beyond theory — combining creativity, mentorship, and real-world innovation to shape the next generation of changemakers.
+            At Deep Root Academy, we go beyond theory — combining creativity,
+            mentorship, and real-world innovation to shape the next generation
+            of changemakers.
           </p>
         </motion.div>
 
@@ -53,9 +55,14 @@ export default function AboutSection() {
               key={i}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{
+                scale: 1.05,
+                rotate: [0, -1, 1, 0],
+                transition: { duration: 0.3 },
+              }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="p-6 bg-cyan-50 rounded-tl-2xl shadow-sm hover:shadow-md transition"
+              className="p-6 bg-cyan-50 rounded-xl shadow-sm hover:shadow-lg cursor-pointer transition-transform"
             >
               <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
                 <div className="mb-3">{item.icon}</div>
