@@ -28,7 +28,7 @@ const features = [
 
 export default function AboutSection() {
   return (
-    <section className="bg-white py-20 px-6 lg:px-16">
+    <section id="about" className="bg-white py-20 px-6 lg:px-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Intro */}
         <motion.div

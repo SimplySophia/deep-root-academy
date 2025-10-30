@@ -27,8 +27,11 @@ const ReviewSlider = () => {
                             <div className='mt-10'>
                                 <div className='flex items-center space-x-4'>
                                      <div>
-                                        <p className='text-sm sm:text-lg font-semibold'>{data.name}</p>
-                                        <p className='text-gray-600 text-xs sm:text-base'>{data.profession}</p>
+                                        <div className='flex items-center gap-2'>
+                                          <span className='bg-[#000b3d] text-white text-sm p-1 rounded-xl'>{data.initial}</span>
+                                          <p className='text-sm sm:text-lg font-semibold'>{data.name}</p>
+                                        </div>
+                                        <p className='text-gray-600 text-xs sm:text-base mt-1'>{data.profession}</p>
                                      </div>
                                 </div>
                             </div>

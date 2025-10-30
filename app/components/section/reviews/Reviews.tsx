@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const Review = () => {
   return (
-    <div className='pt-20 pb-20 flex items-center justify-center flex-col bg-[#000b3d]'>
+    <section id='reviews' className='pt-20 pb-20 flex items-center justify-center flex-col bg-[#000b3d]'>
       <div className='w-[80%] mx-auto grid items-center grid-cols-1 lg:grid-cols-2 gap-10'>
 
         {/* Left Text Section */}
@@ -15,7 +15,7 @@ const Review = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h2 className='text-2xl md:text-4xl font-semibold text-white'>
+          <h2 className='text-2xl md:text-4xl font-semibold text-[#7af58a]'>
             Success Stories
           </h2>
           <p className='mt-6 text-gray-200'>
@@ -23,14 +23,14 @@ const Review = () => {
           </p>
           <div className='mt-6 flex items-center space-x-6'>
             <div>
-              <p className='text-2xl font-bold text-white'>4.85</p>
+              <p className='text-2xl font-bold text-[#f5d17a]'>4.85</p>
               <p className='mb-2 text-white'>Overall Rating</p>
               <div className='flex items-center'>
-                <FaStar className='text-white' />
-                <FaStar className='text-white' />
-                <FaStar className='text-white' />
-                <FaStar className='text-white' />
-                <FaStar className='text-white' />
+                <FaStar className='text-[#f5d17a]' />
+                <FaStar className='text-[#f5d17a]' />
+                <FaStar className='text-[#f5d17a]' />
+                <FaStar className='text-[#f5d17a]' />
+                <FaStar className="text-[#f5d17a]"/>
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@ const Review = () => {
           <ReviewSlider />
         </motion.div>
       </div>
-    </div>
+    </section>
   )
 }
 

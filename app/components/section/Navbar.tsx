@@ -12,7 +12,7 @@ export default function Navbar() {
     { label: "Home", href: "/" },
     { label: "About", href: "#about" },
     { label: "Programs", href: "#programs" },
-    { label: "Stories", href: "#stories" },
+    { label: "Reviews", href: "#reviews" },
   ];
 
   return (
