@@ -15,9 +15,9 @@ const Review = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h1 className='text-2xl font-semibold text-white'>
+          <h2 className='text-2xl md:text-4xl font-semibold text-white'>
             Success Stories
-          </h1>
+          </h2>
           <p className='mt-6 text-gray-200'>
             Hear from our graduates who have transformed their careers and are now working at top tech companies across Nigeria and beyond.
           </p>

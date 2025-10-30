@@ -7,7 +7,7 @@ import { CalendarDays, Clock, MapPin, Laptop, Trophy, Phone, Globe } from "lucid
 export default function Programs() {
   return (
     <section 
-    className="bg-white py-20 px-6 lg:px-16 relative overflow-hidden scroll-mt-32">
+      className="bg-white py-12 px-6 lg:px-16 relative overflow-hidden scroll-mt-32">
            
      <div className="absolute inset-0 -z-10 bg-purple-50/40"></div>
       <div className="container mx-auto">
@@ -18,23 +18,23 @@ export default function Programs() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold text-slate-900 mb-3">
+          <h2 className="text-xl md:text-4xl font-bold text-slate-900 mb-3">
             Deep Root Academy <span className="text-[#f5d17a]">Event</span>
           </h2>
-          <p className="text-gray-600 text-lg">
+          <p className="text-[#5a5af73] text-sm md:text-xl">
             Explore our specialized tech courses and key highlights for the upcoming program.
           </p>
         </motion.div>
 
-<div className="grid md:grid-cols-2 gap-8 mb-5">
+<div className="grid md:grid-cols-2 gap-6 mb-5 max-w-xl md:max-w-3xl mx-auto">
   <motion.div
     initial={{ opacity: 0, x: -30 }}
     whileInView={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.7, ease: "easeOut" }}
     viewport={{ once: true }}
-    className="bg-[#f8f9fc] shadow-md hover:shadow-lg transition rounded-2xl p-8 border border-purple-100"
+    className="bg-[#f8f9fc] shadow-md hover:shadow-lg transition rounded-2xl p-4 md:p-8 border border-purple-100 mx-auto"
   >
-    <h3 className="text-2xl font-semibold text-[#000b3d] mb-4">
+    <h3 className="text-xl md:text-2xl font-semibold text-[#000b3d] mb-4">
       EVENT COURSES
     </h3>
     <ul className="space-y-3 text-gray-700 leading-relaxed list-none">
@@ -68,9 +68,9 @@ export default function Programs() {
     whileInView={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.7, ease: "easeOut" }}
     viewport={{ once: true }}
-    className="bg-[#f8f9fc] shadow-md hover:shadow-lg transition rounded-2xl p-8 border border-purple-100"
+    className="bg-[#f8f9fc] shadow-md hover:shadow-lg transition rounded-2xl p-4 md:p-8 border border-purple-100 mx-auto"
   >
-    <h3 className="text-2xl font-semibold text-[#000b3d] mb-4">
+    <h3 className="text-xl md:text-2xl font-semibold text-[#000b3d] mb-4">
       EVENT HIGHLIGHTS
     </h3>
     <ul className="space-y-3 text-gray-700 leading-relaxed list-none">
@@ -104,9 +104,9 @@ export default function Programs() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="bg-[#000b3d] rounded-2xl p-10 shadow-inner text-[#f8f9fc]"
+          className="bg-[#000b3d] rounded-2xl p-4 md:p-8 shadow-inner text-[#f8f9fc]"
         >
-          <h3 className="text-3xl font-semibold text-[#f8f9fc] mb-6 text-center">
+          <h3 className="text-xl md:text-2xl font-semibold text-[#f8f9fc] mb-6 text-center">
             EVENT DETAILS
           </h3>
 
@@ -134,19 +134,19 @@ export default function Programs() {
             </div>
 
             <div className="space-y-4">
-              <p className="flex items-center gap-3">
+              <p className="flex items-center gap-3 text-sm md:text-lg">
                 <Laptop className="text-cyan-600" />
                 <span>
                   <strong>Requirements:</strong> Laptop, Headphones & Stable Internet
                 </span>
               </p>
-              <p className="flex items-center gap-3">
+              <p className="flex items-center gap-3 text-sm md:text-lg">
                 <Trophy className="text-cyan-600" />
                 <span>
                   <strong>Certificate:</strong> Certificate of Completion for all participants
                 </span>
               </p>
-              <p className="flex items-center gap-3">
+              <p className="flex items-center gap-3 text-sm md:text-lg">
                 💰 <span>Participation Fee: Partnership with Afrihomes Property Limited</span>
               </p>
             </div>
@@ -182,18 +182,18 @@ export default function Programs() {
           </div>
 
           <div className="text-center mt-10">
-            <h4 className="text-xl font-semibold text-[#f8f9fc] mb-3">
+            <h4 className="text-lg md:text-xl font-semibold text-[#f8f9fc] mb-3">
               Learn Future Skills. Build Real Projects. Get Certified.
             </h4>
             <p className="text-[#f8f9fc] mb-6">
               Don’t miss the biggest Tech Learning Event this January!
             </p>
             <Link
-              href="https://wa.me/2348134489773 / 2347041321070" 
+              href="https://wa.me/2348134489773?text=Hello%20I%27m%20interested%20in%20your%20program!"
               target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#c40000] hover:bg-[#c10000] text-white px-5 py-2 rounded-lg shadow-md"          >
-            Register noe
+              rel="noopener noreferrer"
+               className="bg-[#c40000] hover:bg-[#c10000] text-white text-sm px-3 py-2 md:px-5 md:py-2 rounded-lg shadow-md">
+               Register now
             </Link>  
           </div>
         </motion.div>

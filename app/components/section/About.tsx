@@ -29,7 +29,7 @@ const features = [
 export default function AboutSection() {
   return (
     <section className="bg-white py-20 px-6 lg:px-16">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
         {/* Left Intro */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -38,10 +38,10 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="md:w-1/2 text-center md:text-left"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+          <h2 className="text-xl md:text-4xl font-bold text-slate-900">
             Learn with Purpose. Build with Impact.
           </h2>
-          <p className="mt-4 text-[#5a5f73] text-lg leading-relaxed">
+          <p className="mt-4 text-[#5a5f73] text-sm md:text-lg leading-relaxed">
             At Deep Root Academy, we go beyond theory — combining creativity,
             mentorship, and real-world innovation to shape the next generation
             of changemakers.
@@ -64,10 +64,10 @@ export default function AboutSection() {
               viewport={{ once: true }}
               className="p-6 bg-[#d6d7f9] rounded-xl shadow-sm hover:shadow-lg cursor-pointer transition-transform"
             >
-              <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+              <div className="flex flex-col items-center sm:items-start text-center sm:text-left w-60 h-40 p-2">
                 <div className="mb-3">{item.icon}</div>
-                <h3 className="font-semibold text-lg text-slate-900">{item.title}</h3>
-                <p className="mt-2 text-gray-600 text-sm">{item.desc}</p>
+                <h3 className="font-semibold text-lg text-[#222]">{item.title}</h3>
+                <p className="mt-2 text-[#5a5f73] text-sm">{item.desc}</p>
               </div>
             </motion.div>
           ))}

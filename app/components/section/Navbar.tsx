@@ -38,10 +38,10 @@ export default function Navbar() {
             </motion.div>
           ))}
           <Link
-            href="https://wa.me/+234 813 448 9773 / +234 704 132 1070"
+            href="https://wa.me/2348134489773?text=Hello%20I%27m%20interested%20in%20your%20program!"
             target="_blank"
-            className="bg-[#c40000] hover:bg-[#c10000] text-white px-5 py-2 rounded-lg shadow-md"          >
-            Get in Touch
+             className="bg-[#c40000] hover:bg-[#c10000] text-white px-6 py-2 rounded-lg shadow-md">
+              Get in Touch
           </Link>          
           </div>
 
@@ -62,24 +62,23 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-white border-t border-purple-100 shadow-lg"
           >
-            <div className="flex flex-col items-center space-y-3 py-4">
+            <div className="flex flex-col items-center space-y-2 py-4 z-10">
               {navLinks.map((link, i) => (
                 <Link
                   key={i}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-[#5a5f73] hover:text-[#222] font-medium transition text-lg"
+                  className="text-[#222] hover:text-[#5a5f73] font-medium transition text-lg"
                 >
                   {link.label}
                 </Link>
               ))}
               <Link
-            href="https://wa.me/+234 813 448 9773 / +234 704 132 1070"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#c40000] hover:bg-[#c10000] text-white w-10 py-2 rounded-lg shadow-md"          >
-            Get in Touch
-          </Link> 
+                href="https://wa.me/2348134489773?text=Hello%20I%27m%20interested%20in%20your%20program!"
+                target="_blank"
+                 className="bg-[#c40000] hover:bg-[#c10000] text-[#f8f9fc] px-12 py-2 rounded-lg shadow-md">
+                  Get in Touch
+              </Link> 
             </div>
           </motion.div>
         )}

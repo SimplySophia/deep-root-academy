@@ -10,7 +10,7 @@ export default function Hero() {
     <section className="relative flex justify-between overflow-hidden bg-[#f8f9fc]">
       <div className="absolute inset-0 -z-10 bg-cyan-50/40"></div>
 
-      <div className="container mx-auto flex flex-col-reverse items-center gap-10 px-6 py-20 md:flex-row md:justify-between md:py-28 lg:px-16">
+      <div className="container mx-auto flex flex-col-reverse items-center gap-4 px-6 py-20 md:flex-row md:justify-between md:py-28 lg:px-16">
         <motion.div
           className="text-center md:text-left md:w-1/2"
           initial={{ opacity: 0, x: -40 }}
@@ -18,13 +18,13 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h1 className="text-2xl font-bold leading-tight text-[#000b3d] sm:text-2xl lg:text-3xl">
+          <h1 className="text-lg font-bold leading-tight text-[#000b3d] sm:text-2xl lg:text-3xl">
             Empowering the Next Generation of Innovation with{" "}
             <span className="text-[#f5d17a]">AI & Technology</span>
           </h1>
 
-          <p className="mt-6 text-lg text-[#5a5f73] max-w-lg mx-auto md:mx-0">
-            Learn, build, and innovate-The Future Stats with You
+          <p className="mt-6 text-sm md:text-lg text-[#5a5f73] max-w-lg mx-auto md:mx-0">
+            Learn, build, and innovate-The Future Starts with You
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row md:items-start">
             <Link href="#Programs" scroll={true} >
@@ -52,7 +52,7 @@ export default function Hero() {
           </div>
 
           <motion.div
-            className="relative flex flex-col items-center z-50 mb-10"
+            className="relative flex flex-col items-center z-10"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -61,7 +61,7 @@ export default function Hero() {
             <Image
               src="/images/hero-image1.png"
               alt="Students learning technology"
-              className="w-[280px] md:w-[400px] lg:w-[430px] h-auto transition duration-500"
+              className="w-[280px] md:w-[400px] lg:w-[430px] h-auto transition duration-500 mb-10"
               width={500}
               height={500}
               priority
