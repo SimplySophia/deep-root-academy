@@ -4,7 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,7 +62,7 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-white border-t border-purple-100 shadow-lg"
           >
-            <div className="flex flex-col items-center space-y-5 py-6">
+            <div className="flex flex-col items-center space-y-3 py-4">
               {navLinks.map((link, i) => (
                 <Link
                   key={i}
@@ -74,9 +73,13 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <Button className="bg-[#c40000] hover:bg-[#c10000] text-white w-10/12 rounded-lg py-2">
-                Sign Up
-              </Button>
+              <Link
+            href="https://wa.me/+234 813 448 9773 / +234 704 132 1070"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#c40000] hover:bg-[#c10000] text-white w-10 py-2 rounded-lg shadow-md"          >
+            Get in Touch
+          </Link> 
             </div>
           </motion.div>
         )}

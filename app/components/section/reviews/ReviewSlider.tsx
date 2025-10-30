@@ -6,7 +6,6 @@ import "swiper/css/effect-cards";
 import { EffectCards } from 'swiper/modules';
 import { reviewData } from '@/app/data/data';
 import { FaStar } from 'react-icons/fa';
-import Image from 'next/image';
 
 const ReviewSlider = () => {
   return (

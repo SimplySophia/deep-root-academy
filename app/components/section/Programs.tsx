@@ -7,7 +7,6 @@ import { CalendarDays, Clock, MapPin, Laptop, Trophy, Phone, Globe } from "lucid
 export default function Programs() {
   return (
     <section 
-    id="Programs" 
     className="bg-white py-20 px-6 lg:px-16 relative overflow-hidden scroll-mt-32">
            
      <div className="absolute inset-0 -z-10 bg-purple-50/40"></div>
@@ -99,6 +98,8 @@ export default function Programs() {
 
 
         <motion.div
+            id="Programs" 
+
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -188,8 +189,9 @@ export default function Programs() {
               Don’t miss the biggest Tech Learning Event this January!
             </p>
             <Link
-            href="https://wa.me/+234 813 448 9773 / +234 704 132 1070"
-            target="_blank"
+              href="https://wa.me/2348134489773 / 2347041321070" 
+              target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#c40000] hover:bg-[#c10000] text-white px-5 py-2 rounded-lg shadow-md"          >
             Register noe
             </Link>  
