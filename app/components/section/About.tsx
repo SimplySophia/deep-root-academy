@@ -41,7 +41,7 @@ export default function AboutSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
             Learn with Purpose. Build with Impact.
           </h2>
-          <p className="mt-4 text-gray-600 text-lg leading-relaxed">
+          <p className="mt-4 text-[#5a5f73] text-lg leading-relaxed">
             At Deep Root Academy, we go beyond theory — combining creativity,
             mentorship, and real-world innovation to shape the next generation
             of changemakers.
@@ -62,7 +62,7 @@ export default function AboutSection() {
               }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="p-6 bg-purple-100 rounded-xl shadow-sm hover:shadow-lg cursor-pointer transition-transform"
+              className="p-6 bg-[#d6d7f9] rounded-xl shadow-sm hover:shadow-lg cursor-pointer transition-transform"
             >
               <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
                 <div className="mb-3">{item.icon}</div>

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-purple-400 border-t border-cyan-100 py-6">
+    <footer className="bg-[#000b3d] border-t border-cyan-100 py-6">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-6 lg:px-16">
         {/* WhatsApp Contact */}
         <motion.div
@@ -16,9 +16,9 @@ export default function Footer() {
         >
           <MessageCircle className="w-5 h-5 text-green-600" />
           <Link
-            href="https://wa.me/2348012345678"
+            href="https://wa.me/+234 813 448 9773 / +234 704 132 1070"
             target="_blank"
-            className="hover:text-cyan-200 transition font-medium"
+            className="hover:text-[##d6d7f9] transition font-medium"
           >
             Chat with us on WhatsApp
           </Link>

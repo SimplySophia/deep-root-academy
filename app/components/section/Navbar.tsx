@@ -19,12 +19,10 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md border-b border-cyan-100 z-50">
       <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-16">
-        {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-cyan-700">
-          <span className="text-white bg-purple-800 rounded-lg text-lg p-3">DR</span>
+          <span className="text-white bg-[#000b3d] rounded-lg text-lg p-3">DR</span>
         </Link>
 
-        {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link, i) => (
             <motion.div
@@ -34,28 +32,28 @@ export default function Navbar() {
             >
               <Link
                 href={link.href}
-                className="text-gray-700 hover:text-cyan-700 font-medium transition"
+                className="text-[#5a5f73] hover:text-[#222] font-medium transition"
               >
                 {link.label}
               </Link>
             </motion.div>
           ))}
+          <Link
+            href="https://wa.me/+234 813 448 9773 / +234 704 132 1070"
+            target="_blank"
+            className="bg-[#c40000] hover:bg-[#c10000] text-white px-5 py-2 rounded-lg shadow-md"          >
+            Get in Touch
+          </Link>          
+          </div>
 
-          <Button className="bg-pink-500 hover:bg-pink-600 text-white px-5 py-2 rounded-lg shadow-md">
-            Sign Up
-          </Button>
-        </div>
-
-        {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-pink-500 hover:text-pink-600 transition"
+          className="md:hidden text-[#000b3d] hover:text-[#222] transition"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Drawer */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -71,12 +69,12 @@ export default function Navbar() {
                   key={i}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-gray-700 hover:text-purple-700 font-medium transition text-lg"
+                  className="text-[#5a5f73] hover:text-[#222] font-medium transition text-lg"
                 >
                   {link.label}
                 </Link>
               ))}
-              <Button className="bg-pink-500 hover:bg-pink-700 text-white w-10/12 rounded-lg py-2">
+              <Button className="bg-[#c40000] hover:bg-[#c10000] text-white w-10/12 rounded-lg py-2">
                 Sign Up
               </Button>
             </div>
