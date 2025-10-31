@@ -18,13 +18,16 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <h1 className="text-lg font-bold leading-tight text-[#000b3d] sm:text-2xl lg:text-3xl">
-            Empowering the Next Generation of Innovation with{" "}
-            <span className="text-[#f5d17a]">AI & Technology</span>
+          <h1 className="text-lg font-bold leading-tight text-[#000b3d] sm:text-xl lg:text-3xl">
+            Deep Root Academy — A Deep Root Education Initiative
           </h1>
+          <h3 className="text-xl font-semibold mt-2">Empowering the Next Generation of Innovation with{" "}
+            <span className="text-[#f5d17a]">AI & Technology</span>
+          </h3>
 
-          <p className="mt-6 text-sm md:text-lg text-[#5a5f73] max-w-lg mx-auto md:mx-0">
-            Learn, build, and innovate-The Future Starts with You
+          <p className="mt-4 text-lg md:text-xl text-[#5a5f73] max-w-2xl">
+            At the intersection of <span className="font-semibold text-[#000b3d]">education</span> and <span className="font-semibold text-[#000b3d]">technology</span>, 
+            we grow problem-solvers who don’t just adapt to the future, they <span className="font-semibold text-[#c40000]">build it</span>.
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row md:items-start">
             <Link href="#Programs" scroll={true} >

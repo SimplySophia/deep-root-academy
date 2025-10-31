@@ -39,13 +39,16 @@ export default function AboutSection() {
           className="md:w-1/2 text-center md:text-left"
         >
           <h2 className="text-xl md:text-4xl font-bold text-slate-900">
-            Learn with Purpose. Build with Impact.
+            Deep root Academy. Learn with Purpose. Build with Impact.
           </h2>
-          <p className="mt-4 text-[#5a5f73] text-sm md:text-lg leading-relaxed">
-            At Deep Root Academy, we go beyond theory — combining creativity,
-            mentorship, and real-world innovation to shape the next generation
-            of changemakers.
-          </p>
+          <p className="mt-4 text-base md:text-lg text-[#5a5f73] max-w-3xl">
+    At <span className="font-semibold text-[#000b3d]">Deep Root Academy</span>, 
+    a proud subsidiary of <span className="font-semibold text-[#c40000]">Deep Root Education</span>, 
+    we believe in nurturing talent from the ground up — equipping learners with the 
+    <span className="font-semibold text-[#000b3d]"> skills, mindset, and curiosity</span> to thrive in a 
+    tech-driven world. Our programs blend hands-on experience with forward-thinking innovation, 
+    empowering students to not just learn about the future, but to <span className="font-semibold text-[#c40000]">create it</span>.
+  </p>
         </motion.div>
 
         {/* Right Grid */}
