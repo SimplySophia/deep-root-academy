@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
@@ -17,9 +18,24 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md border-b border-cyan-100 z-50">
-      <div className="container mx-auto flex items-center justify-between py-4 px-6 lg:px-16">
-        <Link href="/" className="text-2xl font-bold text-cyan-700">
-          <span className="text-white bg-[#000b3d] rounded-lg text-lg p-3">DR</span>
+      <div
+        className="
+          container mx-auto 
+          flex items-center justify-between 
+          h-16           
+          px-6 lg:px-16
+        "
+      >
+        {/* Logo */}
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/DRE-Logo.png"
+            alt="Students learning technology"
+            className="w-[85px] md:w-[85px] lg:w-[95px] object-contain"
+            width={100}
+            height={100}
+            priority
+          />
         </Link>
 
         <div className="hidden md:flex items-center space-x-8">
@@ -37,14 +53,17 @@ export default function Navbar() {
               </Link>
             </motion.div>
           ))}
+
           <Link
             href="https://wa.me/2348134489773?text=Hello%20I%27m%20interested%20in%20your%20program!"
             target="_blank"
-             className="bg-[#c40000] hover:bg-[#c10000] text-white px-6 py-2 rounded-lg shadow-md">
-              Get in Touch
-          </Link>          
-          </div>
+            className="bg-[#c40000] hover:bg-[#a60000] text-white px-3 py-1 rounded-lg shadow-md transition"
+          >
+            Get in Touch
+          </Link>
+        </div>
 
+        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-[#000b3d] hover:text-[#222] transition"
           onClick={() => setIsOpen(!isOpen)}
@@ -53,6 +72,7 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* Mobile Dropdown */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -62,7 +82,7 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-white border-t border-purple-100 shadow-lg"
           >
-            <div className="flex flex-col items-center space-y-2 py-4 z-10">
+            <div className="flex flex-col items-center space-y-3 py-5">
               {navLinks.map((link, i) => (
                 <Link
                   key={i}
@@ -76,9 +96,10 @@ export default function Navbar() {
               <Link
                 href="https://wa.me/2348134489773?text=Hello%20I%27m%20interested%20in%20your%20program!"
                 target="_blank"
-                 className="bg-[#c40000] hover:bg-[#c10000] text-[#f8f9fc] px-12 py-2 rounded-lg shadow-md">
-                  Get in Touch
-              </Link> 
+                className="bg-[#c40000] hover:bg-[#a60000] text-white px-10 py-2 rounded-lg shadow-md transition"
+              >
+                Get in Touch
+              </Link>
             </div>
           </motion.div>
         )}
