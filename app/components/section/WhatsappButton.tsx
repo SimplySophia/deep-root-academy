@@ -1,4 +1,3 @@
-// components/WhatsAppButton.tsx
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {

@@ -8,7 +8,6 @@ const Review = () => {
     <section id='reviews' className='pt-20 pb-20 flex items-center justify-center flex-col bg-[#000b3d]'>
       <div className='w-[80%] mx-auto grid items-center grid-cols-1 lg:grid-cols-2 gap-10'>
 
-        {/* Left Text Section */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -36,7 +35,6 @@ const Review = () => {
           </div>
         </motion.div>
 
-        {/* Right Review Slider */}
         <motion.div
           className='overflow-hidden'
           initial={{ opacity: 0, x: 40 }}

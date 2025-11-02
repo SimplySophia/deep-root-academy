@@ -26,7 +26,6 @@ export default function Navbar() {
           px-6 lg:px-16
         "
       >
-        {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
             src="/images/DRE-Logo.png"
@@ -63,7 +62,6 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-[#000b3d] hover:text-[#222] transition"
           onClick={() => setIsOpen(!isOpen)}
@@ -72,7 +70,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

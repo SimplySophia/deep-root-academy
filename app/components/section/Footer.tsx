@@ -8,7 +8,6 @@ export default function Footer() {
   return (
     <footer className="bg-[#000b3d] border-t border-cyan-100 py-6">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-6 lg:px-16">
-        {/* WhatsApp Contact */}
         <motion.div
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
@@ -24,7 +23,6 @@ export default function Footer() {
           </Link>
         </motion.div>
 
-        {/* Copyright */}
         <p className="text-gray-700 text-sm text-center md:text-right">
           © {new Date().getFullYear()} Deep Root Academy. All rights reserved.
         </p>
